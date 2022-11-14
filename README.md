@@ -1,5 +1,12 @@
-Termnial Progress Bar
+Terminal Progress Bar
 =====================
+
+This is a fork off Ryan Young's Terminal Progress Bar project.
+
+
+
+
+Original Repository README:
 
 This is a simple c++ application that will print a progress bar in a terminal for 
 a specified period of time. 
