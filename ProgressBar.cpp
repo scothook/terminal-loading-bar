@@ -11,7 +11,7 @@ void printProgressBar(std::chrono::seconds time_duration)
     {
         float percent = float(count) / secondsDuration;
         printLine(percent);
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+        std::this_thread::sleep_for(std::chrono::milliseconds(5));
         count ++;
     }
 
@@ -21,14 +21,20 @@ void printLine(float percent)
 {
     int lineLength = getLineLength() - 1;
     int progress = floor(percent * lineLength);
-    std::cout << "\r" << KCYN;
+    std::string testDesign [22] = {"°", "º", "¤", "ø", ",", "¸", "¸", ",", "ø", "¤", "º", "°", "`", "°", "º", "¤", "ø", ",", "¸", ",", "ø", "¤"};
+
+  
+    std::cout << "\r";
+    //std::cout << "\r" << KCYN;
     for(int i=0; i < progress; i++)
     {
-        std::cout << "=";
+        //std::cout << "=";
+      std::cout << testDesign[i%22];
     }
 
-    std::cout << "|" << std::flush; 
-    std::cout << RST;
+    std::cout << std::flush;
+    //std::cout << "|" << std::flush; 
+    //std::cout << RST;
 }
 
 int getLineLength()
