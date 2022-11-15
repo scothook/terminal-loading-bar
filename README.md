@@ -1,9 +1,6 @@
-Terminal Progress Bar
-=====================
+Terminal Loading Bar
 
-This is a fork off Ryan Young's Terminal Progress Bar project.
-
-
+This is built off of Ryan Young's Terminal Progress Bar project. I wanted to use C++ to make a loading/progress bar in the terminal that was as visually pleasing as possible with relatively simple tools.
 
 
 Original Repository README:
