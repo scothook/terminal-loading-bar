@@ -2,6 +2,8 @@ Terminal Loading Bar
 
 This is built off of Ryan Young's Terminal Progress Bar project. I wanted to use C++ to make a loading/progress bar in the terminal that was as visually pleasing as possible with relatively simple tools.
 
+Built on replit.
+
 
 Original Repository README:
 
